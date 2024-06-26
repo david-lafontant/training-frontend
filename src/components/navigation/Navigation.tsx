@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom";
+
 const Navigation = () => {
   return (
        
@@ -9,12 +11,11 @@ const Navigation = () => {
                 </svg></span><span>Formations&nbsp;en&nbsp;ligne</span></a><button data-bs-toggle="collapse" className="navbar-toggler" data-bs-target="#navcol-2"><span className="visually-hidden">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
         <div className="collapse navbar-collapse" id="navcol-2">
             <ul className="navbar-nav ms-auto">
-                <li className="nav-item"><a className="nav-link active" href="#">Acceuil</a></li>
-                <li className="nav-item"></li>
-                <li className="nav-item"><a className="nav-link" href="#">A&nbsp;propos&nbsp;de&nbsp;nous</a></li>
-                <li className="nav-item"><a className="nav-link" href="#">Formations</a></li>
-                <li className="nav-item"></li>
-            </ul><a className="btn btn-primary ms-md-2" role="button" href="#">Inscrivez-vous</a>
+                <li className="nav-item"><Link to="/" className="nav-link active">Acceuil </Link></li>
+                <li className="nav-item"><Link to="/a-propos" className="nav-link">A&nbsp;propos&nbsp;de&nbsp;nous</Link></li>
+                <li className="nav-item"><Link to="/formations" className="nav-link">Formations</Link></li>
+                <li className="nav-item"><Link to="/contactez-nous" className="nav-link">Contactez-nous</Link></li>
+            </ul><Link to="/inscription" className="btn btn-primary ms-md-2" role="button">Inscrivez-vous</Link>
         </div>
     </div>
 </nav>
@@ -22,3 +23,4 @@ const Navigation = () => {
 }
 
 export default Navigation;
+
