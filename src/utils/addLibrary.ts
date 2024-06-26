@@ -4,5 +4,8 @@ function AddLibrary(urlOfTheLibrary:string) {
     script.src = urlOfTheLibrary;
     script.async = true;
     document.body.appendChild(script);
+    return () => {
+        document.body.removeChild(script);
+    }
 }
 export  default AddLibrary;
