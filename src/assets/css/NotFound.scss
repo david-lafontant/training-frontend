@@ -1,0 +1,71 @@
+
+$blue1:#006eff;
+
+  #notfound {
+    margin-top: 15%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .notfound {
+    max-width:460px;
+    width:100%;
+    text-align:center;
+    line-height:1.4;
+    align-self: center;
+  }
+  .notfound .notfound-404 {
+    height:158px;
+    line-height:153px;
+  }
+  .notfound .notfound-404 h1 {
+
+    color:#044943;
+    font-size:16rem;
+    letter-spacing:1rem;
+    margin:0;
+    font-weight:700;
+    text-shadow:2px 2px 0 #c9c9c9,-2px -2px 0 #c9c9c9;
+  }
+  .notfound .notfound-404 h1>span {
+    text-shadow:2px 2px 0 $blue1,-2px -2px 0 $blue1,0 0 8px $blue1;
+  }
+  .notfound p {
+    font-family:josefin sans,sans-serif;
+    color:#c9c9c9;
+    font-size:16px;
+    font-weight:400;
+    margin-top:0;
+    margin-bottom:15px;
+  }
+  .notfound a {
+
+    font-size:1.2rem;
+    text-decoration:none;
+    text-transform:uppercase;
+    background:0 0;
+    color:#c9c9c9;
+    border:2px solid #c9c9c9;
+    display:inline-block;
+    padding:10px 25px;
+    font-weight:700;
+    -webkit-transition:.2s all;
+    transition:.2s all
+  }
+  .notfound a:hover {
+    color:$blue1;
+    border-color:$blue1;
+  }
+  @media only screen and (max-width:480px) {
+    .notfound .notfound-404 {
+      height:122px;
+      line-height:122px;
+    }
+    .notfound .notfound-404 h1 {
+      font-size:8rem;
+    }
+  }
+  
