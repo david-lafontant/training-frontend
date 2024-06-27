@@ -1,0 +1,25 @@
+.index{
+    z-index: -1;
+}
+
+.blueBg{
+    background-color: blue;
+}
+
+.width350{
+    max-width: 350px;
+}
+.minHeigh300{
+    min-height: 300px;
+}
+
+.height600{
+    height: 600px;
+}
+
+.homeParallax{
+    height: 600px;
+    background-image: url(https://cdn.bootstrapstudio.io/placeholders/1400x800.png);
+    background-position: center;
+    background-size: cover;
+}
